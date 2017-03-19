@@ -7,7 +7,7 @@
     $id = $content->inline_query->id;
     $query = $content->inline_query->query;
 
-    if($id AND strlen($query)) {
+    if($id) {
         $res = array();
         $x=0;
         foreach (glob("base_pics/*.jpg") as $image) {
